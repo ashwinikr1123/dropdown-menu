@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ededed;
+}
+#navbar ul li {
+  color: #333;
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+/* for hiding nested menu */
+#navbar ul li ul li {
+  display: none;
+}
+
+/* for top menu hover */
+
+#navbar ul li:hover {
+  background-color: firebrick;
+  color: #fff;
+}
+/* here it is added for adding color white to link*/
+#navbar ul li:hover a {
+  color: #fff;
+}
+
+/* for displaying nested menus */
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 1rem;
+}
+#navbar ul li:hover ul li {
+  display: block;
+  background-color: #fff;
+}
+#navbar ul li:hover ul li a {
+  /* background-color: #fff; */
+  color: #222;
+}
+#navbar ul li:hover ul li:hover {
+  background-color: #777676;
+}
+#navbar ul li:hover ul li:hover a {
+  color: #fff;
+}
